@@ -1,4 +1,7 @@
-# docs
+# 文字数カウント
+シンプルな文字数カウントするサイト。localStorageに保存できるよ。
+<img width="1148" alt="Screen Shot 2021-10-04 at 19 59 58" src="https://user-images.githubusercontent.com/33516104/135840113-51371825-792d-4f0b-a224-93b8a954932a.png">
+
 
 ## Build Setup
 
