@@ -21,10 +21,10 @@
           <textarea v-model.trim="message" id="" class="w-full outline-none" rows="15"></textarea>
         </div>
         <!-- textarea -->
-        <div class="p-5 pb-0 flex items-center justify-center">
+        <div class="p-3 pb-0 flex items-center justify-center text-xs">
           <p>※現在使用しているブラウザに内容が保存されます。個人情報などの漏洩すると危険な情報は入力しないでください。</p>
         </div>
-        <div class="flex items-center justify-center p-4 pt-0">
+        <div class="flex items-center justify-center p-2">
           <button v-on:click="postLocalStorage(message)" class="bg-white shadow sm:rounded-lg p-4">ブラウザに内容を保存</button>
         </div>
       </div>
