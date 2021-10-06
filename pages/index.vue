@@ -1,5 +1,6 @@
 <template>
   <div>
+    <notifications position="bottom left" class="" />
     <div class="relative　items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0">
       <div class="w-full max-w-4xl mx-auto sm:px-6 lg:px-8">
         <!-- counter -->
@@ -22,10 +23,10 @@
         </div>
         <!-- textarea -->
         <div class="p-3 pb-0 flex items-center justify-center text-xs">
-          <p>※現在使用しているブラウザに内容が保存されます。個人情報などの漏洩すると危険な情報は入力しないでください。</p>
+          <p>※現在使用しているブラウザに内容が保存されます。</p>
         </div>
         <div class="flex items-center justify-center p-2">
-          <button v-on:click="postLocalStorage(message)" class="bg-white shadow sm:rounded-lg p-4">ブラウザに内容を保存</button>
+          <button v-on:click="postLocalStorage(message)" class="bg-white shadow sm:rounded-lg p-4">ブラウザに内容を保存(command (⌘) + S)</button>
         </div>
       </div>
     </div>
@@ -61,3 +62,4 @@ export default {
   }
 }
 </script>
+<style>
