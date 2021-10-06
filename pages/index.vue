@@ -38,8 +38,17 @@ export default {
   mounted: function() {
     const str = getLocalStorage()
     if(typeof str !== 'undefined') this.message = str
+
+    // add shortcuts 
+    window.addEventListener("keydown", function(e) {
+      if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
+          e.preventDefault();
+          this.postLocalStorage(this.message);
+      }
+    }.bind(this));
   },
-  components: { 
+  components: {
+    
   },
   data: function () {
     return {
